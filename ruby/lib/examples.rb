@@ -6,7 +6,7 @@ class Examples
      :aws_access_key_id => "#{ENV['UKCLOUD_S3_UID']}/#{ENV['UKCLOUD_S3_SUBTENANT']}",
      :aws_secret_access_key => ENV['UKCLOUD_S3_SECRET'],
      :host => ENV['UKCLOUD_S3_HOST'],
-     :port => '8443',
+     :port => ENV['UKCLOUD_S3_PORT'],
      :scheme => 'https',
      :path_style => true,
      :aws_signature_version=> 2,
